@@ -15,9 +15,11 @@ import Partners from "../../Mocks/OurPartners.json";
 import KindnessCard from "../../Components/Act of Kindness/KindnessCard";
 import BoardMembersCarousel from "../../Components/BoardMembers/BoardMembersCarousel";
 import Footer from "../../Components/Footer/Footer";
+import Donate from "../../Components/Donate/Donate";
 
 export default function Home() {
   const [isActiveMenu, setIsActiveMenu] = React.useState(false);
+  const [isDonationFormOpen, setIsDonationFormOpen] = React.useState(false);
 
   return (
     <div className="home__container">
@@ -56,7 +58,7 @@ export default function Home() {
         <div className="home__container__landing__footer">
           <div>
             <h1>For the people by the people.</h1>
-            <Link className="home__container__landing__footer__donate" to="/">
+            <Link onClick={() => setIsDonationFormOpen(true)} className="home__container__landing__footer__donate" to="/">
               Donate
             </Link>
           </div>
@@ -64,6 +66,11 @@ export default function Home() {
           <Link className="home__container__landing__footer__ourWork" to="/">
             Our Work
           </Link>
+        </div>
+
+        {/** @dev this is dismissiable donation form */}
+        <div style={{display: isDonationFormOpen ? "block": 'none'}} className="home__container__landing__donationForm">
+          <Donate setIsDonationFormOpen={setIsDonationFormOpen}/>
         </div>
 
         <div
