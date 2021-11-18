@@ -315,26 +315,139 @@
       flex: 2;
     }
 
-    .home__container__howWeWork__detail{
-        border-left: 0.3px solid #7a7a7a;
-        flex: 3;
-        padding-left: 15px;
+    .home__container__howWeWork__detail {
+      border-left: 0.3px solid #7a7a7a;
+      flex: 3;
+      padding-left: 15px;
 
-        p{
-            line-height: 1.8;
+      p {
+        line-height: 1.8;
+      }
+      a {
+        line-height: 2.8;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        color: #000;
+
+        &:hover {
+          border-left: 3px solid #000;
+          padding-left: 15px;
         }
-        a{
-            line-height: 2.8;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-            color: #000;
+      }
+    }
+  }
 
-            &:hover{
-                border-left: 3px solid #000;
-                padding-left: 15px;
+  /** @section => our board members */
+  .home__container__boardMembers {
+    padding: 50px 5vw;
+    margin-top: 10px;
+    background: rgb(245, 245, 245);
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  /** @section => coming soon */
+  .home__container__comingSoon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 5vw;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .home__container__comingSoon__banner,
+    .home__container__comingSoon__contents {
+      flex: 1 1 0;
+    }
+    .home__container__comingSoon__banner {
+      width: 40%;
+      height: 350px;
+      object-fit: cover;
+      margin-right: 40px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .home__container__comingSoon__contents {
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 50px;
+      }
+
+      span {
+        color: #e74c3c;
+        font-weight: 500;
+      }
+
+      p {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 150px;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  /** @section => our partner */
+    .home__container__ourPartner {
+        padding: 70px 5vw;
+        margin-top: 10px;
+        background: rgb(245, 245, 245);
+        border-bottom: 1px solid grey;
+        padding-top: 40px;
+    
+        h1 {
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 40px;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        img{
+            height: 80px;
+            object-fit: contain;
+
+            @media (max-width: 768px) {
+                margin-top: 20px;
             }
         }
     }
-  }
+
+    /** @section => copyright info */
+    .home__container__copyrightInfo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 5vw;
+        font-weight: 500;
+        background: rgb(245, 245, 245);
+        padding-bottom: 20px;
+    }
 }

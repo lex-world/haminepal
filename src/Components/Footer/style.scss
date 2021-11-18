@@ -1,0 +1,55 @@
+.footer__container {
+  background: rgb(245, 245, 245);
+  padding: 60px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #7a7a7a;
+  }
+
+  .newsletter__inputHolder {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 40px;
+
+    input {
+      width: 200px;
+      background: transparent;
+      outline: none;
+      border: none;
+      font-size: 17px;
+      margin-right: 20px;
+    }
+
+    button {
+      border: none;
+      background: transparent;
+      background: #e74c3c;
+      border-radius: 40px;
+      font-size: 18px;
+      padding: 10px 20px;
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .newsletter {
+      margin-top: 50px;
+    }
+  }
+}
