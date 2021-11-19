@@ -8,6 +8,8 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 
+import { Link } from "react-location";
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -68,7 +70,7 @@ export default function CausesTabs() {
         </Box>
         <TabPanel className="causes__container__items" value={value} index={0}>
           {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div className="item" key={item}>
+            <Link className="item" to="/cause-focused/?id=1234" key={item}>
               <img
                 src="https://images.unsplash.com/photo-1617817546276-80b86dd60151?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 className="item__image"
@@ -81,12 +83,12 @@ export default function CausesTabs() {
                 dignissimos molestiae accusamus quos ipsa magni.
               </div>
               <Button>Donate</Button>
-            </div>
+            </Link>
           ))}
         </TabPanel>
         <TabPanel className="causes__container__items" value={value} index={1}>
           {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div className="item" key={item}>
+            <Link className="item" to="/cause-focused/?id=1234" key={item}>
               <img
                 src="https://images.unsplash.com/photo-1617817546276-80b86dd60151?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 className="item__image"
@@ -99,12 +101,12 @@ export default function CausesTabs() {
                 dignissimos molestiae accusamus quos ipsa magni.
               </div>
               <Button>Donate</Button>
-            </div>
+            </Link>
           ))}
         </TabPanel>
         <TabPanel className="causes__container__items" value={value} index={2}>
           {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div className="item" key={item}>
+            <Link className="item" to="/cause-focused/?id=1234" key={item}>
               <img
                 src="https://images.unsplash.com/photo-1617817546276-80b86dd60151?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 className="item__image"
@@ -117,12 +119,12 @@ export default function CausesTabs() {
                 dignissimos molestiae accusamus quos ipsa magni.
               </div>
               <Button>Donate</Button>
-            </div>
+            </Link>
           ))}
         </TabPanel>
         <TabPanel className="causes__container__items" value={value} index={3}>
           {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div className="item" key={item}>
+            <Link className="item" to="/cause-focused/?id=1234" key={item}>
               <img
                 src="https://images.unsplash.com/photo-1617817546276-80b86dd60151?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 className="item__image"
@@ -135,12 +137,12 @@ export default function CausesTabs() {
                 dignissimos molestiae accusamus quos ipsa magni.
               </div>
               <Button>Donate</Button>
-            </div>
+            </Link>
           ))}
         </TabPanel>
         <TabPanel className="causes__container__items" value={value} index={4}>
           {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div className="item" key={item}>
+            <Link className="item" to="/cause-focused/?id=1234" key={item}>
               <img
                 src="https://images.unsplash.com/photo-1617817546276-80b86dd60151?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 className="item__image"
@@ -153,7 +155,7 @@ export default function CausesTabs() {
                 dignissimos molestiae accusamus quos ipsa magni.
               </div>
               <Button>Donate</Button>
-            </div>
+            </Link>
           ))}
         </TabPanel>
       </Box>

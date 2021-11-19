@@ -16,6 +16,7 @@ import Volunteer from './Pages/Volunteer/Volunteer';
 import NewVolunteer from './Pages/NewVolunteer/NewVolunteer';
 import VolunteerProfile from './Pages/VolunteerProfile/VolunteerProfile';
 import Causes from './Pages/Causes/Causes';
+import CauseFocused from './Pages/CauseFocused/CauseFocused';
 
 const location = new ReactLocation();
 
@@ -44,6 +45,10 @@ export default function App() {
           {
             path: "/causes",
             element: <Causes />,
+          },
+          {
+            path: "/cause-focused",
+            element: <CauseFocused />,
           },
         ]}
       />
