@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 
 import Logo from "../../Assets/logo.png";
+
 import { Link } from "react-location";
 
 import VolunteerCard from "../../Components/VolunteerCard/VolunteerCard";
@@ -9,6 +10,7 @@ import Footer from "../../Components/Footer/Footer";
 
 export default function Volunteer() {
   const [isActiveMenu, setIsActiveMenu] = React.useState(false);
+
   return (
     <div className="volunteer__container">
       {/* @sectoin => topbar */}
@@ -91,7 +93,7 @@ export default function Volunteer() {
           Others?
         </p>
 
-        <Link to="/be_a_volunteer">Be a Volunteer</Link>
+        <Link to="/new-volunteer">Be a Volunteer</Link>
       </div>
 
       {/* @section => definition */}
