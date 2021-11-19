@@ -19,6 +19,7 @@ import Causes from './Pages/Causes/Causes';
 import CauseFocused from './Pages/CauseFocused/CauseFocused';
 import Events from './Pages/Events/Events';
 import EventFocused from './Pages/EventFocused/EventFocused';
+import CreateEvent from './Pages/CreateEvent/CreateEvent';
 
 const location = new ReactLocation();
 
@@ -59,6 +60,10 @@ export default function App() {
           {
             path: "/event-focused",
             element: <EventFocused />,
+          },
+          {
+            path: "/new-event",
+            element: <CreateEvent />,
           },
         ]}
       />
