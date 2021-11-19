@@ -1,0 +1,108 @@
+.aboutUsTabs__container {
+  margin-bottom: 50px;
+
+  .Mui-selected {
+    color: #fff !important;
+    background: #e74c3c;
+    border: none !important;
+  }
+
+  .MuiTabs-indicator {
+    display: none;
+  }
+
+  .aboutUsTabs__container__whoWeAre {
+    width: 60vw;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: 95vw;
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+  }
+  .aboutUsTabs__container__howWeWork {
+    width: 60vw;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: 95vw;
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  .aboutUsTabs__container__whatWeDo {
+    width: 60vw;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: 95vw;
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.7;
+
+      ul {
+        margin-top: 30px;
+
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .aboutUsTabs__container__team .MuiTypography-root {
+    padding: 0 5vw;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+      width: 22vw;
+      text-align: center;
+
+      @media (max-width: 992px) {
+        width: 39vw;
+      }
+      @media (max-width: 768px) {
+        width: 80vw;
+      }
+
+      img {
+        width: 100px;
+        border-radius: 50%;
+      }
+
+      p{
+          margin-bottom: 50px;
+          margin-top: 20px;
+          line-height: 1.7;
+      }
+    }
+  }
+}

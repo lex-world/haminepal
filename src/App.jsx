@@ -21,6 +21,10 @@ import Events from './Pages/Events/Events';
 import EventFocused from './Pages/EventFocused/EventFocused';
 import CreateEvent from './Pages/CreateEvent/CreateEvent';
 import OurWork from './Pages/OurWork/OurWork';
+import ContactUs from './Pages/ContactUs/ContactUs';
+import SignUp from './Pages/SignUp/SignUp';
+import Login from './Pages/Login/Login';
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 const location = new ReactLocation();
 
@@ -69,6 +73,22 @@ export default function App() {
           {
             path: "/our-work",
             element: <OurWork />,
+          },
+          {
+            path: "/contact",
+            element: <ContactUs />,
+          },
+          {
+            path: "/signup",
+            element: <SignUp />,
+          },
+          {
+            path: "/login",
+            element: <Login />,
+          },
+          {
+            path: "/about",
+            element: <AboutUs />,
           },
         ]}
       />
