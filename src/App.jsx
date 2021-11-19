@@ -12,6 +12,7 @@ import 'remixicon/fonts/remixicon.css'
 
 /** @pages */
 import Home from './Pages/Home/Home';
+import Volunteer from './Pages/Volunteer/Volunteer';
 
 const location = new ReactLocation();
 
@@ -25,10 +26,10 @@ export default function App() {
             path: "/",
             element: <Home />,
           },
-          // {
-          //   path: "/about",
-          //   element: <Home />,
-          // },
+          {
+            path: "/be_a_volunteer",
+            element: <Volunteer />,
+          },
         ]}
       />
     </>
