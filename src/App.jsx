@@ -15,6 +15,7 @@ import Home from './Pages/Home/Home';
 import Volunteer from './Pages/Volunteer/Volunteer';
 import NewVolunteer from './Pages/NewVolunteer/NewVolunteer';
 import VolunteerProfile from './Pages/VolunteerProfile/VolunteerProfile';
+import Causes from './Pages/Causes/Causes';
 
 const location = new ReactLocation();
 
@@ -39,6 +40,10 @@ export default function App() {
           {
             path: "/volunteer-profile",
             element: <VolunteerProfile />,
+          },
+          {
+            path: "/causes",
+            element: <Causes />,
           },
         ]}
       />
