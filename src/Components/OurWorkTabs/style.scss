@@ -1,0 +1,33 @@
+.ourWorkTabs__container {
+  margin-bottom: 50px;
+
+  .Mui-selected {
+    color: #fff !important;
+    background: #e74c3c;
+    border: none !important;
+  }
+
+  .MuiTabs-indicator {
+    display: none;
+  }
+
+  .ourWorkTabs__container__items {
+    .images {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .column {
+        max-width: 30vw;
+      }
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        vertical-align: middle;
+      }
+    }
+  }
+}
