@@ -85,6 +85,7 @@ export default function NewVolunteer() {
         </ul>
       </div>
 
+      {/* @section => form */}
       <div className="newVolunteer__container__form">
         <h1>Volunteer Details</h1>
         <div className="divider"></div>
@@ -148,9 +149,9 @@ export default function NewVolunteer() {
             />
           </div>
         </div>
-
       </div>
-        <Footer/>
+
+      <Footer />
     </div>
   );
 }

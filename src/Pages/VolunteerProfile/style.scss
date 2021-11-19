@@ -1,0 +1,225 @@
+.volunteerProfile__container {
+  position: relative;
+  height: 100vh;
+
+  .volunteerProfile__container__blob {
+    position: absolute;
+    height: 500px;
+    width: 250vw;
+    background: #a11b1c;
+    top: 30vh;
+    right: -50vw;
+    z-index: -1;
+    // opacity: 0.03;
+    transform: rotate(-30deg);
+  }
+  .volunteerProfile__container__topbar,
+  .volunteerProfile__container__landing__hiddenMenu__topbar {
+    width: 100%;
+    padding: 25px 35px 25px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    button {
+      background: transparent !important;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      i {
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+
+  .volunteerProfile__container__landing__hiddenMenu__topbar {
+    background: #fff;
+  }
+
+  // @section => hidden menu
+  .volunteerProfile__container__landing__hiddenMenu {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 85%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .volunteerProfile__container__landing__hiddenMenu__items {
+      list-style: none;
+      height: 100%;
+      width: 100%;
+      padding: 0 50px;
+
+      a {
+        color: #ffff;
+        text-decoration: none;
+        font-size: 32px;
+        line-height: 1.8;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          border-left: 2px solid #fff;
+          padding-left: 25px;
+        }
+      }
+
+      &.left {
+        background: #34495e;
+        flex: 3;
+        padding-top: 22vh;
+      }
+
+      &.right {
+        background: #2c3e50;
+        text-align: right;
+        flex: 2;
+        padding-top: 15vh;
+
+        a {
+          font-family: "Playfair Display", serif;
+          font-size: 50px;
+          font-weight: 700;
+
+          &:hover {
+            border-right: 2px solid #fff;
+            padding-right: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  /* @section => main content */
+  .volunteerProfile__container__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5vw;
+    flex-direction: row;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .volunteerProfile__container__main__userimage {
+      flex: 1;
+      text-align: center;
+      color: #fff;
+
+      img {
+        border-radius: 50%;
+        width: 250px;
+        border: 3px solid #fff;
+      }
+
+      .name {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+    }
+
+    .volunteerProfile__container__main__userinfo {
+      flex: 3;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.24),
+        0 16px 32px -4px rgba(145, 158, 171, 0.24);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 25px 30px 25px;
+
+      @media (max-width: 992px) {
+        margin-top: 40px;
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      div {
+        flex: 1 1 0;
+
+        h4 {
+          margin-top: 20px;
+        }
+
+        p {
+          line-height: 1.5;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  /* @section => Worked Projects */
+  .volunteerProfile__container__workedProjects {
+    padding: 80px 5vw;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+    }
+
+    .volunteerProfile__container__workedProjects__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .item {
+        width: 28vw;
+        margin-top: 40px;
+        box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.24),
+          0 16px 32px -4px rgba(145, 158, 171, 0.24);
+        border-radius: 14px;
+
+        @media (max-width: 992px) {
+          width: 40vw;
+          margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          border-radius: 14px 14px 0 0;
+        }
+
+        .item__info {
+          padding: 20px;
+          line-height: 1.7;
+        }
+
+        .MuiButton-root{
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+            color: #fff;
+            background: #A11A1C;
+            margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}

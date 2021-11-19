@@ -14,6 +14,7 @@ import 'remixicon/fonts/remixicon.css'
 import Home from './Pages/Home/Home';
 import Volunteer from './Pages/Volunteer/Volunteer';
 import NewVolunteer from './Pages/NewVolunteer/NewVolunteer';
+import VolunteerProfile from './Pages/VolunteerProfile/VolunteerProfile';
 
 const location = new ReactLocation();
 
@@ -34,6 +35,10 @@ export default function App() {
           {
             path: "/new-volunteer",
             element: <NewVolunteer />,
+          },
+          {
+            path: "/volunteer-profile",
+            element: <VolunteerProfile />,
           },
         ]}
       />
